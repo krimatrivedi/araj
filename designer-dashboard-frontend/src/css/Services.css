@@ -1,0 +1,45 @@
+/* .service_title{
+    text-align: left;
+    color: #841e1a;
+    font-size: 25px;
+    margin: 0%;
+}
+.service_description{
+    text-align: left;
+}
+hr.new1 {
+    border-top: 1px solid #841e1a;
+    text-align: left;
+    padding: 0%;
+    /* float: left; */
+/* } */
+.service-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Ensures all content aligns to the left */
+    padding: 20px;
+  }
+  
+  .service-item {
+    display: flex;
+    align-items: center; /* Aligns <p> and <hr> in one line */
+  }
+  
+  .service_title {
+    color: #841e1a;
+    font-size: 25px;
+    margin: 0;
+    padding-right: 10px; /* Adds space between text and line */
+  }
+  
+  .service_description {
+    text-align: left;
+    margin-bottom: 15px; /* Adds some space between description blocks */
+  }
+  
+  hr.new1 {
+    border-top: 1px solid #841e1a;
+    margin: 0;
+    padding: 0;
+  }
+  

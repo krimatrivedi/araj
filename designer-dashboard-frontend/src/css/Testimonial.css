@@ -1,0 +1,61 @@
+.service-container {
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 columns */
+    grid-template-rows: auto;  /* Automatically adjust the number of rows */
+    gap: 0px;  /* No space between grid items */
+    /* border: 2px solid #841e1a;  /* Outer border for the entire grid */
+    position: relative;  /* Position for pseudo-elements */
+}
+
+.image-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    border-right: 2px solid #841e1a;  /* Right border (vertical line between items) */
+    border-bottom: 2px solid #841e1a;  /* Bottom border (horizontal line between items) */
+    border-right-style: dashed;
+    border-bottom-style: dashed;
+    /* margin-bottom: 10px; */
+}
+
+.image-item img {
+    width: 45%;
+    display: block;
+    padding: 40px;
+}
+
+/* Remove the right border on the last column (3rd image) */
+.image-grid .image-item:nth-child(3n) {
+    border-right: none;
+}
+
+/* Remove the bottom border on the last row (last 3 items) */
+.image-grid .image-item:nth-last-child(-n+3) {
+    border-bottom: none;
+}
+
+.first_title{
+    font-size: 25px;
+    margin: 0%;
+    color:#ef5453;
+    margin-left: 20px;
+    text-align: left;
+}
+.second_title{
+    font-size: 25px;
+    color: #841e1a;
+    margin: 5px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.main_container{
+    padding: 30px;
+}

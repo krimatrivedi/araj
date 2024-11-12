@@ -1,0 +1,37 @@
+.main_container {
+    position: relative;
+    min-height: 100vh; /* Ensures the container takes at least full height of the screen */
+}
+
+.content_div {
+    padding: 20px;
+    /* margin-left: 10px; */
+}
+
+.first_title {
+    font-size: 36px;
+    text-align: left;
+}
+
+.second_title {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.description_one, .description_two {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+    margin-left: 20px;
+}
+
+/* Style for the pink section */
+.pink-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* margin-left: 10px; */
+    height: 35%; /* This will take up 3/4 of the screen height */
+    background-color: #f1c7d6; /* Pink background color */
+}
