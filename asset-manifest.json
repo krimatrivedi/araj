@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/krimatrivedi/araj.git/static/css/main.50562864.css",
+    "main.js": "/krimatrivedi/araj.git/static/js/main.4b3a70c7.js",
+    "static/js/453.bb79b71f.chunk.js": "/krimatrivedi/araj.git/static/js/453.bb79b71f.chunk.js",
+    "index.html": "/krimatrivedi/araj.git/index.html",
+    "main.50562864.css.map": "/krimatrivedi/araj.git/static/css/main.50562864.css.map",
+    "main.4b3a70c7.js.map": "/krimatrivedi/araj.git/static/js/main.4b3a70c7.js.map",
+    "453.bb79b71f.chunk.js.map": "/krimatrivedi/araj.git/static/js/453.bb79b71f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.50562864.css",
+    "static/js/main.4b3a70c7.js"
+  ]
+}
