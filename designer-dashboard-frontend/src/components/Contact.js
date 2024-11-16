@@ -1,36 +1,71 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from 'react';
 import '../css/Contact.css';
+import { FaWhatsapp, FaEnvelope, FaInstagram, FaPhoneAlt } from 'react-icons/fa';
 
 function Contact() {
-    const [contacts, setContacts] = useState([]);
-
-    // useEffect(() => {
-    //     axios.get('/api/contacts/')
-    //         .then(response => setContacts(response.data))
-    //         .catch(error => console.log(error));
-    // }, []);
+    const whatsappNumber = '+919316430528';
+    const email = 'studio.araj@gmail.com';
+    const instagramHandle = 'studio_araj';
 
     return (
         <div className='main_container'>
             <div className='content_div'>
-                <p className='first_title'>STUDIO ARAJ</p>
-                <p className='second_title'>speaks fluent Creative</p>
-                {/* <h2>Contact Messages</h2> */}
-                <p className='description_one'>With the experience of 12 years, ARAJ is a brand creation & design studio rooted in INDIA.</p>
-                <p className='description_two'>We act creative with attention and boldness to discover the potential of your brand. The
-                    first rule when creating value through design elements is to ensure they look aesthetically
-                    appealing. We believe that harmony has enormous impact and only the precise balance of
-                    forms will allow this harmony to emerge.</p>
+                <p className='highlight_main'>
+                    It's about <span className="highlight">You</span> & <span className="highlight">We</span>
+                </p>
+                <p className='description_one'>A company should know its mission, audience & goals. Not only do we help you discover
+                    these essential elements, we connect them all through functional & cohesive design.
+                    Our job is to help you fully understand your company's personality in order to build the
+                    strongest brand.</p>
+                <p className='description_one'>The solutions we build go beyond simple design, as they reflect your story & your sincere
+                    commitment.
+                </p>
+                <p className='description_one'>Is your company ready to share the story?
+                </p>
+
+                {/* Social Links Section */}
+                <div className='contact-links'>
+                    {/* WhatsApp Link */}
+                    <a
+                        href={`https://wa.me/${whatsappNumber}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className='contact-icon whatsapp'
+                    >
+                        <FaWhatsapp /> WhatsApp
+                    </a>
+                    {/* Call Link */}
+                    <a
+                        href={`tel:${whatsappNumber}`}
+                        className='contact-icon phone'
+                    >
+                        <FaPhoneAlt /> Call
+                    </a>
+
+                    {/* Email Link */}
+                    <a
+                        href={`mailto:${email}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className='contact-icon email'
+                    >
+                        <FaEnvelope /> Email
+                    </a>
+
+                    {/* Instagram Link */}
+                    <a
+                        href={`https://instagram.com/${instagramHandle}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className='contact-icon instagram'
+                    >
+                        <FaInstagram /> Instagram
+                    </a>
+                </div>
             </div>
 
-            {/* Bottom section with pink background */}
-            <div className="pink-bottom">
-                {/* You can add content or leave it as a solid pink background */}
-            </div>
         </div>
     );
-
 }
 
 export default Contact;

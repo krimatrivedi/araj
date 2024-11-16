@@ -8,8 +8,8 @@ function Services() {
     useEffect(() => {
         hrRefs.current.forEach((hr, index) => {
         const relatedTitle = hr.previousElementSibling;
-        var titleLength = relatedTitle.textContent.length
         if (relatedTitle) {
+        var titleLength = relatedTitle.textContent.length
             // Set the width of the <hr> based on the <p> text width
             hr.style.width = `${titleLength * 20}px`; // Adjust "+20px" as needed
         }
@@ -24,8 +24,6 @@ function Services() {
 
     return (
         <div className="service-container">
-            <p>Services</p>
-            <p>This is the Services page.</p>
             <p className='service_title heading'>BRANDING</p>
             <hr class="new1" ref={addToRefs}></hr>
             <p className='service_description'>Logo Design | Visiting Card | Letterhead | Envelope | Company Profile

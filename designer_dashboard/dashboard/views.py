@@ -30,12 +30,22 @@ def get_testimonials(request):
 
 @api_view(['GET'])
 def get_images(request):
-    # Adjust this to fetch image paths dynamically from your 'araj' folder
-    images = []
-    media_folder = Path(settings.MEDIA_ROOT) / 'araj'
-    print("media_f..older", media_folder)
-    for img in media_folder.glob('*.*'):  # This will get all files in the 'araj' folder
-        images.append(str(img.relative_to(settings.MEDIA_ROOT)))
+    try:
+        # Adjust this to fetch image paths dynamically from your 'araj' folder
+        images = []
+        print("_________________________________")
+        print("_________________________________")
+        print("_________________________________")
+        print("settings.MEDIA_ROOT", settings.MEDIA_ROOT)
+        media_folder = Path(settings.MEDIA_ROOT) / 'araj'
+        print("media_f..older", media_folder)
+        for img in media_folder.glob('*.*'):  # This will get all files in the 'araj' folder
+            # images.append(str(img.relative_to(settings.MEDIA_ROOT)))
+            relative_path = f'/media/{img.relative_to(settings.MEDIA_ROOT)}'
+            images.append(str(relative_path))
 
-    print("imag..es", images)
-    return Response(images)
+        print("imag..es", images)
+        return Response(images)
+    except Exception as e:
+        print("e...", e)
+

@@ -23,6 +23,7 @@
     line-height: 1.6;
     text-align: left;
     margin-left: 20px;
+    margin-top: 30px;
 }
 
 /* Style for the pink section */
@@ -34,4 +35,75 @@
     /* margin-left: 10px; */
     height: 35%; /* This will take up 3/4 of the screen height */
     background-color: #f1c7d6; /* Pink background color */
+}
+
+.highlight_main {
+    color: #FF6347; /* Choose any color you like */
+    text-align: left;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.highlight:nth-child(1) {
+    color: #841e1a; /* Example color for Attention */
+}
+
+.highlight:nth-child(2) {
+    color: #841e1a; /* Example color for Imagination */
+}
+
+.highlight:nth-child(3) {
+    color: #841e1a; /* Example color for Big Events */
+}
+
+.contact-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+.contact-icon {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.contact-icon:hover {
+    color: #007bff;
+}
+
+.whatsapp {
+    color: #25D366;
+}
+
+.email {
+    color: #D44638;
+}
+
+.instagram {
+    color: #C13584 !important;
+}
+
+.contact-icon {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.contact-icon.whatsapp {
+    color: #25D366; /* WhatsApp green */
+}
+
+.contact-icon.phone {
+    color: #007BFF; /* Call button blue */
+}
+
+.contact-icon:hover {
+    opacity: 0.8;
 }

@@ -1,0 +1,16 @@
+/* Filename - App.css */
+
+
+
+/* .footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	color: white;
+	font-size: 25px;
+    height: 5%;
+} */
+.footer_container{
+    background-color: #f1c7d6!important;
+	height: 100px;
+}

@@ -34,7 +34,8 @@ hr.new1 {
   
   .service_description {
     text-align: left;
-    margin-bottom: 15px; /* Adds some space between description blocks */
+    margin-top: 10px;
+    margin-bottom: 25px; /* Adds some space between description blocks */
   }
   
   hr.new1 {
